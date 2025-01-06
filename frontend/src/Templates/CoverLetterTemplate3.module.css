@@ -1,0 +1,146 @@
+.previewSection{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 210mm; /* Set to A4 width */
+    height: 296mm;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.upperSection{
+    margin-top: 2px;
+    display: flex;
+    background-color: #ffffec;
+    gap: 1px;
+    border-radius: 5px;
+}
+
+.upperLeftSection{
+    margin-left: 13px;
+    padding-right: 2px;
+    border-right: 5px solid #724e2c;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: monospace;
+}
+
+.upperLeftSection h1 {
+    color: #724e2c ;
+}
+
+.upperLeftSection h3{
+    font-style: bold;
+    color: #333;
+}
+
+.hori{
+    width: 30%;
+    background-color: #724e2c;
+    margin-left: 67mm;
+    height: 5px;
+}
+
+.horid{
+    width: 30%;
+    background-color: #9c6f44;
+    margin-left: 67mm;
+    height: 2px;
+}
+
+.upperRightSection{
+    border-left: 2px solid #9c6f44 ;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: monospace;
+    
+}
+
+.upperRightSection h3{
+    color: #9c6f44;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+
+.contact{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-left: 7px;
+
+}
+
+.upperRightSection i {
+    color: #724e2c;
+    margin-right: 6px;
+}
+
+.lowerSection{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+
+.letterBody p{
+    font-style: italic;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.lowerRightSection h3{
+    font-size: large;
+    font-style: italic;
+    font-family: monospace;
+}
+
+.lowerLeftSection h3{
+    font-size: large;
+    font-style: italic;
+    font-family: monospace;
+}
+.lowerLeftSection p {
+    font-size: large;
+    font-family: monospace;
+}
+
+.lowerLeftSection {
+    border-right: 2px solid #9c6f44;
+    padding-right: 10px;
+}
+
+/* Buttons */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .buttonContainer button {
+    padding: 10px 20px;
+    background-color: var(--skin-color);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .buttonContainer button:hover {
+    background-color: #0056b3;
+  }
+  

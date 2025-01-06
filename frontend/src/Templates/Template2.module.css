@@ -1,0 +1,106 @@
+/* General Container */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    margin: auto;
+    background: #ffffff;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Left Section */
+  .leftSection {
+    background: #f4daad;
+    padding: 20px;
+    width: 35%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .profileImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .contactList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contactList li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .contactList li i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: black;
+  }
+  
+  .contactList a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .contactList a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right Section */
+  .rightSection {
+    padding: 20px;
+    width: 65%;
+  }
+  
+  .rightSection .section {
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Break words that exceed the container width */
+    white-space: normal; /* Allow text to wrap normally */
+  }
+  
+  .rightSection h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .rightSection p,
+  .rightSection li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .rightSection ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  

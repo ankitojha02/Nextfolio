@@ -1,0 +1,144 @@
+/* General Styling */
+.resume {
+  display: flex;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.resumeLeft {
+  width: 35%;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.resumeRight {
+  width: 65%;
+  padding: 20px;
+  background-color: beige;
+}
+
+.resumeProfile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.resumeContent,
+.resumeItem {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.regular {
+  font-size: 1rem;
+  color: #555;
+}
+
+.resumeSkills ul,
+.resumeProjects ul,
+.resumeHobby ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skillProgress {
+  background-color: #ddd;
+  height: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.skillProgress span {
+  display: block;
+  height: 5px;
+  background-color: #007bff;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .resumeLeft, .resumeRight {
+    width: 100%; /* Stacks the sections on medium screens */
+    margin-bottom: 20px;
+  }
+
+  .resumeLeft {
+    padding: 15px;
+  }
+
+  .resumeRight {
+    padding: 15px;
+  }
+
+  .resumeProfile img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column; /* Stacks the resume sections vertically on small screens */
+    align-items: center;
+  }
+
+  .resumeLeft, .resumeRight {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .resumeProfile img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .bold {
+    font-size: 1rem; /* Smaller font size for better readability on smaller screens */
+  }
+
+  .regular {
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+
+  .skillProgress {
+    height: 4px; /* Smaller skill bar on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .resumeLeft, .resumeRight {
+    padding: 10px; /* Less padding on very small screens */
+  }
+
+  .resumeProfile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bold {
+    font-size: 0.9rem; /* Even smaller font size */
+  }
+
+  .regular {
+    font-size: 0.8rem; /* Further reduction in font size */
+  }
+
+  .skillProgress {
+    height: 3px; /* Even smaller skill bar */
+  }
+
+  .resumeSkills ul,
+  .resumeProjects ul,
+  .resumeHobby ul {
+    padding-left: 20px; /* Add some padding for better alignment */
+  }
+}

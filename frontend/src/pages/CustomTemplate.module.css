@@ -1,0 +1,97 @@
+/* Wrapper for the entire component */
+.wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 280px;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Grid layout for the templates */
+.templateGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual template card styling */
+.templateCard {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.templateCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.templateImage {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Template title */
+.templateName {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Template description */
+.templateDescription {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Button styling */
+.selectButton {
+  background-color: var(--skin-color);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selectButton:hover {
+  background-color: gray;
+}
+
+/* Selected template section */
+.selectedTemplate {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.selectedTemplate h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.selectedTemplate p {
+  font-size: 1rem;
+  color: #555;
+}

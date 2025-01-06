@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    width: 210mm;
+    height: 297mm;
+    margin: auto;
+    border: 1px solid #ddd;
+    font-family: "Arial", sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left Section */
+  .leftSection {
+    width: 35%;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .profileContainer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profileImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .role {
+    font-size: 16px;
+    font-weight: 300;
+    color: #dddddd;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+
+  .projectItem {
+    margin-bottom: 10px;
+  }
+  
+  .projectLink {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+  
+  .projectLink:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+  }
+  
+  .contactList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contactList li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .contactList li i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #00bcd4;
+  }
+  
+  /* Right Section */
+  .rightSection {
+    width: 65%;
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333333;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 5px;
+  }
+  
+  .section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  

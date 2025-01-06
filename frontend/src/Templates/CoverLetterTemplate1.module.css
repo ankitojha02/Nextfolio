@@ -1,0 +1,173 @@
+/* General Styles */
+.previewSection {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 210mm; /* Set to A4 width */
+    height: 296mm; /* Set to A4 height */
+    margin: 0 auto;
+    padding: 20px; /* Adjust padding to fit content */
+    box-sizing: border-box;
+    max-width: 800px;
+    
+    
+  }
+  
+  /* Left Section */
+  .leftSection {
+    width: 40%;
+    padding-right: 20px;
+    background-color: #f26722;
+    
+  }
+  
+  .leftSection h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .contact div {
+    margin-bottom: 10px;
+  }
+
+  .contactheading{
+    margin-left: 10px;
+    margin-top: 100px;
+  }
+
+  .phone{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .message{
+    margin-top: 70px;
+    color: #fff;
+  }
+
+  .address{
+    margin-top: 70px;
+    color: #fff;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    border-color: #f26722;
+    outline: none;
+  }
+
+  .contact{
+    margin-left: 10px;
+  }
+
+  .coverhead {
+    margin-top: 20px;
+    margin-left: 33%;
+  }
+  .companyAddress{
+    margin-left: 10px;
+    color: #fff;
+  }
+
+  .to{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  
+  /* Right Section */
+  .rightSection {
+    width: 55%;
+  }
+
+  .para{
+    margin-top: 20px;
+  }
+
+  .date{
+    margin-top: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .rightSection h1 {
+    font-size: 28px;
+    color: #0056b3;
+    margin-top: 20px;
+  }
+  
+  .rightSection p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .rightSection h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .rightSection input,
+  .rightSection textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .rightSection input:focus,
+  .rightSection textarea:focus {
+    border-color: #f26722;
+    outline: none;
+  }
+  
+  /* Button Container */
+  .buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .buttonContainer button {
+    background-color: #f26722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonContainer button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .previewSection {
+      flex-direction: column;
+      padding: 10mm;
+    }
+  
+    .leftSection,
+    .rightSection {
+      width: 100%;
+    }
+  }
+  

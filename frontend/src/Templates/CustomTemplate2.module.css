@@ -1,0 +1,141 @@
+/* Main container for the resume layout */
+.previewSection {
+    display: flex;
+    width: 210mm; /* A4 width */
+    min-height: 297mm; /* A4 height */
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+   
+    overflow: visible;
+  }
+  
+  /* Left Section */
+  .leftSection {
+    width: 30%;
+    background-color: #050505; /* Dark background */
+    color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leftSection h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .leftSection p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .contacthead {
+    color: #fff;
+  }
+  .leftSection .contact {
+    margin-top: 05px;
+  }
+  
+  .leftSection .contact a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    
+  }
+
+  .skills{
+    margin-top: 30px;
+    
+  }
+
+  .skillshead{
+    color: #fff;
+  }
+  .skills li {
+    margin-top: 30px;
+    margin-left: 01px;
+    list-style: disc;
+  }
+  
+  .leftSection .contact i {
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  
+  /* Right Section */
+  .rightSection {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .rightSection h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2c3e50;
+    display: inline-block;
+  }
+  
+  .rightSection h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .rightSection p,
+  .rightSection ul {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+  }
+  
+  .rightSection ul {
+    padding-left: 20px;
+  }
+  
+  .rightSection li {
+    margin-bottom: 5px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .buttonContainer{
+    margin-left: 24%;
+    margin-top: 20px;
+  }
+  
+  .button {
+    background-color: var(--skin-color);
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .previewSection {
+      flex-direction: column;
+    }
+  
+    .leftSection,
+    .rightSection {
+      width: 100%;
+    }
+  }
+  
+  @media print {
+    
+    .previewSection {
+      width: 210mm; /* Set A4 width */
+      height: 297mm; /* Set A4 height */
+      margin: 0; /* Remove default margin for print */
+      box-shadow: none;
+      border: none;
+    }
+  }
+  

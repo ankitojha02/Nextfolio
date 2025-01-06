@@ -1,0 +1,323 @@
+/* Global Styles */
+/*
+:root {
+  --primary-color: #ff5733;
+  --secondary-color: #333333;
+  --accent-color: #f0f0f0;
+  --text-color: #222;
+  --light-text-color: #777;
+  --font-family: 'Poppins', sans-serif;
+}*/
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  line-height: 1.6;
+  background: var(--accent-color);
+  overflow-x: hidden;
+}*/
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-left: 20%;
+}
+
+/* Landing Section */
+.landing {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+/* Home.module.css */
+@keyframes curtain {
+  0% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+}
+
+.landing {
+  position: relative;
+  overflow: hidden; /* Ensures curtain effect stays within bounds */
+}
+
+.landing .curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Adjust color as needed */
+  animation: curtain 1.5s ease-out forwards;
+  z-index: 1; /* Ensures the curtain is above the content */
+}
+
+.landing .banner {
+  position: relative;
+  z-index: 2; /* Ensures banner is above the curtain */
+}
+
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--light-text-color);
+}
+
+/* About Section */
+.about {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.aboutLeft {
+  flex: 1;
+}
+
+.aboutRight {
+  flex: 1;
+}
+
+.aboutRight h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.aboutRight h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.aboutRight .info {
+  margin-top: 20px;
+}
+
+.aboutRight .socialMedia i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.aboutRight a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.servicesHeader h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.servicesHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.servicesList {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.listItem {
+  
+  background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+  padding: 20px;
+  
+
+  text-align: center;
+  flex: 1;
+  transition: transform 0.3s;
+}
+
+.listItem:hover {
+  transform: translateY(-10px);
+  color: gray;
+}
+
+.listItem i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.portfolioHeader h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.portfolioHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.work {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.work img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.workInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:rgba(255, 255, 255, 0.2);;
+
+  border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+  color: #060000;
+  font-weight: 1600;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.work:hover .workInfo {
+  transform: translateY(0);
+}
+
+/* Achievements Section */
+.data {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.dataHeader h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.dataHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.dataList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dataItem {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dataItem span:first-child {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--light-text-color);
+}
+
+.dataItem .num {
+  font-size: 2rem;
+  font-weight: bold;
+  color: gray;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: #fff;
+}
+
+.footerSocialMedia i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footerSocialMedia i:hover {
+  color: grey;
+}
+
+.copyright span {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+

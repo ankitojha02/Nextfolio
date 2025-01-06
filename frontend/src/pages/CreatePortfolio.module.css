@@ -1,0 +1,157 @@
+:root {
+    --skin-color:#443bf6;
+}
+
+.createPortfolio {
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-left: 350px;
+    padding: 20px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .inputField,
+  .textareaField,
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .textareaField {
+    height: 100px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: var(--skin-color);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #333;
+  }
+  
+  .addBtn {
+    background: var(--skin-color);
+  }
+
+  .downloadButton {
+    background-color: var(--skin-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .downloadButton:hover {
+    background-color: #333;
+  }
+  
+  
+  .addBtn:hover {
+    background: #333;
+  }
+  
+  .submitBtn {
+    background: var(--skin-color);
+  }
+  
+  .submitBtn:hover {
+    background: #333;
+  }
+  
+  .projectsSection,
+  .contactSection {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #555;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* --- Responsive Design --- */
+  @media (max-width: 768px) {
+    .createPortfolio {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .inputField,
+    .textareaField,
+    .dropdown {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .createPortfolio {
+      box-shadow: none;
+      border-radius: 0;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    .inputField,
+    .textareaField,
+    .dropdown {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    h3 {
+      font-size: 16px;
+    }
+  }
+  

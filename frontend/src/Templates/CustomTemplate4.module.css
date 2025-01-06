@@ -1,0 +1,147 @@
+/* Preview Section */
+.previewSection {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Upper Section */
+.upperSection {
+  margin-top: 02px;
+  margin-bottom: 0px;
+}
+
+.upperSection .section {
+  flex: 1;
+}
+
+.skillssection{
+  display: flex;
+}
+.skillslist {
+  display: flex;
+  gap: 10px;
+  
+}
+.skillslist li {
+  font-size: larger;
+}
+
+.namehead {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 2px;
+}
+
+.contacthead {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+
+.contact i {
+  margin-right: 10px;
+  color: #6f4e37;
+}
+
+.contact div input {
+  flex: 1;
+  margin-left: 5px;
+}
+
+/* Divider */
+.divider {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Lower Section */
+.lowerSection {
+  padding-top: 5px;
+}
+
+.section h3 {
+  font-size: 22px;
+  color: #6f4e37;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+
+.section p {
+  font-size: 16px;
+  color: #555;
+}
+
+.section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section ul li {
+  margin-bottom: 15px;
+}
+
+.section ul li a {
+  color: #6f4e37;
+  text-decoration: none;
+}
+
+.section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  width: 30px;
+  margin-left: 23%;
+}
+
+.buttonContainer button {
+  flex: 1;
+  background-color: var(--skin-color);
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .previewSection {
+    padding: 20px;
+  }
+
+  .upperSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact div {
+    justify-content: center;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

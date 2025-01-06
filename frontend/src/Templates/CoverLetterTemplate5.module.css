@@ -1,0 +1,77 @@
+.previewSection{
+  display: flex;
+  
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 210mm; /* Set to A4 width */
+  height: 296mm;
+  margin: 0 auto;
+  
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.leftSection{
+  background-color: #48BBDB;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 110mm;
+}
+
+.contact{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.rightSection{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  display: flex;
+ 
+  
+  flex-direction: column;
+  gap: 80px;
+}
+
+.contacta{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rightUpper{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buttonContainer button {
+  padding: 10px 20px;
+  background-color: var(--skin-color);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.buttonContainer button:hover {
+  background-color: #0056b3;
+}
